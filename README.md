@@ -1,11 +1,90 @@
-# Sample Snack app
+# 💕 AI Girlfriend Chat App
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+A modern AI-powered chat app built with **React Native + Expo**, where users can talk to a personalized virtual girlfriend. The AI adapts based on user input, offering flirty, emotionally intelligent conversations with animated avatars and a smooth UI.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+---
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## ✨ Features
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+- 🤖 Real-time AI chat using [OpenRouter AI API](https://openrouter.ai/)  
+- 👩 Personalized girlfriend with name, personality & interests
+- 🖼️ Random avatar images or emoji fallback
+- 💬 Typing indicator (like WhatsApp)
+- 💅 Clean, modern pink-and-white themed UI
+- 📱 iOS and Android support (with Dynamic Island & notch-safe layout)
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+---
+
+## 📦 Tech Stack
+
+- **React Native** + **Expo**
+- **OpenRouter API** (chat completions) [AI model - Z.AI: GLM 4.5 Air (free)]
+- **AsyncStorage** (optional future use)
+- **Custom avatars** in `assets/avatars/`
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/ai-girlfriend-chat.git
+cd ai-girlfriend-chat
+```
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Add your API key
+In ChatScreen.js, replace:
+
+```
+const API_KEY = "YOUR_API_KEY_HERE";
+```
+
+with your OpenRouter AI key.
+
+### 4. Run the app
+
+```
+npx expo start
+```
+
+Scan the QR code to open it on your phone.
+
+## 📁 Project Structure
+
+```
+.
+├── App.js                # Main entry & navigation
+├── assets/
+│   ├── logo.png
+│   └── avatars/          # Add your avatar images here
+├── pages/
+│   ├── SplashScreen.js
+│   ├── InputScreen.js
+│   └── ChatScreen.js
+```
+
+## 📝 License
+This project is licensed under the MIT License.
+
+## 👤 Author
+Built by R.Maunick — feel free to fork, contribute, or reach out!
+
+
+
+
+
+
+
+
+
+
+
+
+
